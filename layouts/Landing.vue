@@ -1,5 +1,9 @@
 <template>
-  <div class="min-h-screen w-screen"><slot /></div>
+  <div class="min-h-screen h-[200vh] w-screen">
+    <Navbar />
+    <slot />
+    <Footer />
+  </div>
 </template>
 
 <script setup lang="ts">

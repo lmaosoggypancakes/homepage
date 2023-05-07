@@ -1,18 +1,7 @@
 <template>
-  <div
-    v-motion="{
-      initial: {
-        y: 100,
-        opacity: 0,
-      },
-      enter: {
-        y: 0,
-        opacity: 1,
-      },
-    }"
-  >
-    Hello
-  </div>
+  <About />
+  <Projects />
+  <Contact />
 </template>
 
 <script setup lang="ts">
