@@ -1,3 +1,5 @@
 <template>
-  <div class="h-screen"></div>
+  <div class="h-[80vh]">
+    <div class="divider">ABOUT ME</div>
+  </div>
 </template>

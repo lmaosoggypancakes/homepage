@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen h-[200vh] w-screen">
+  <div class="min-h-screen h-[200vh] w-screen flex flex-col items-center">
     <Navbar />
     <slot />
     <Footer />

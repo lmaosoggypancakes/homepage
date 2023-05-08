@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig(<any>{
-  modules: ["@nuxtjs/tailwindcss", "@vueuse/nuxt/", "nuxt-icon"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@vueuse/motion/nuxt",
+    "nuxt-icon",
+    "@vueuse/nuxt",
+  ],
   motions: {
     directives: {
       "pop-bottom": {

@@ -4,4 +4,6 @@ export interface GitHubRepo {
   link: string;
   language: string;
   website?: string;
+  description: string;
+  image: string;
 }
