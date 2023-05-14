@@ -7,10 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import { themeChange } from "theme-change";
-
 useHead({
-  title: "Josef Macera's Homepage",
+  title: "Josef Macera Portfolio",
   meta: [
     {
       name: "description",

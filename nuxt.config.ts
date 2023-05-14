@@ -8,4 +8,10 @@ export default defineNuxtConfig({
     "nuxt-icon",
   ],
   css: ["@/assets/global.css"],
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
 });
