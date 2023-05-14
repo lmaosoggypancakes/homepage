@@ -27,7 +27,10 @@
           <li><a>Contact Me</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl text-primary">Josef</a>
+      <a
+        class="btn btn-ghost normal-case text-xl dark:text-primary text-secondary"
+        >Josef</a
+      >
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">

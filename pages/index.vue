@@ -8,9 +8,6 @@
 </template>
 
 <script setup lang="ts">
-onBeforeMount(() => {
-  if (!localStorage.theme) localStorage.setItem("theme", "dark");
-});
 definePageMeta({
   layout: "landing",
 });

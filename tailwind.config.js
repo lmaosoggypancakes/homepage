@@ -32,6 +32,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  darkMode: ["class", '[data-theme="dark"]'],
+  darkMode: ['[data-theme="dark"]'],
   plugins: [require("daisyui")],
 };
