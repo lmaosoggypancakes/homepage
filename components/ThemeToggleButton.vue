@@ -17,13 +17,11 @@ onBeforeMount(() => {
 });
 
 const toggleTheme = () => {
-  console.log(`from: ${theme.value}`);
   if (theme.value == "dark") {
     theme.value = "light";
   } else {
     theme.value = "dark";
   }
   document.documentElement.dataset.theme = theme.value;
-  console.log(`to: ${theme.value}`);
 };
 </script>
