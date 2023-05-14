@@ -36,6 +36,10 @@
         <li><a href="#contact">Contact Me</a></li>
       </ul>
     </div>
-    <div class="navbar-end"></div>
+    <div class="navbar-end lg:mr-4">
+      <ThemeToggleButton />
+    </div>
   </nav>
 </template>
+
+<script setup></script>

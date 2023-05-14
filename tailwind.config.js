@@ -4,7 +4,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        rosepine: {
+        dark: {
           primary: "#c4a7e7",
           secondary: "#ebbcba",
           accent: "#f6c177",
@@ -15,7 +15,7 @@ module.exports = {
           warning: "#f6c177",
           error: "#eb6f92",
         },
-        "rosepine-dawn": {
+        light: {
           primary: "#907aa9",
           secondary: "#d7827e",
           accent: "#907aa9",
@@ -32,5 +32,6 @@ module.exports = {
   theme: {
     extend: {},
   },
+  darkMode: ["class", '[data-theme="dark"]'],
   plugins: [require("daisyui")],
 };

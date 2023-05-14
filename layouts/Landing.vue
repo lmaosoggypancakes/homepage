@@ -19,7 +19,4 @@ useHead({
     },
   ],
 });
-onMounted(() => {
-  themeChange(false);
-});
 </script>
