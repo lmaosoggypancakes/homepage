@@ -8,7 +8,7 @@
           y: 100,
           opacity: 0,
         }"
-        :enter="{ y: 0, opacity: 1, transition: { delay: 0 } }"
+        :enter="{ y: 0, opacity: 1, transition: { delay: 250 } }"
       >
         Hello, I'm <span class="text-secondary">Josef Macera</span>.
       </h1>
@@ -19,7 +19,7 @@
           y: 100,
           opacity: 0,
         }"
-        :enter="{ y: 0, opacity: 1, transition: { delay: 250 } }"
+        :enter="{ y: 0, opacity: 1, transition: { delay: 500 } }"
       >
         I'm a full-stack web developer based in Reno, Nevada. I'm an open source
         enthusiast and enjoy anything to do with computers.
