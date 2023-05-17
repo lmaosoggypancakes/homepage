@@ -17,4 +17,12 @@ useHead({
     },
   ],
 });
+
+const particlesInit = async (engine: any) => {
+  await loadFull(engine);
+};
+
+const particlesLoaded = async (container: any) => {
+  console.log("Particles container loaded", container);
+};
 </script>
