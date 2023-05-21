@@ -1,6 +1,6 @@
 <template>
-  <div class="h-[80vh] grid grid-cols-2">
-    <div>
+  <div class="h-[80vh] grid md:grid-cols-2">
+    <div class="md:p-0 p-4">
       <h1 class="text-5xl font-extrabold text-secondary mb-4">About Me</h1>
       I've been programming
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center h-[80vh]" id="hero">
-    <div class="lg:ml-0 ml-8">
+    <div class="lg:ml-0 md:p-0 p-4">
       <h1
         class="lg:text-7xl text-5xl mt-[10%] float-left"
         v-motion="{
