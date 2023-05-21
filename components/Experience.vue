@@ -1,1 +1,67 @@
-<template></template>
+<template>
+  <div class="h-[80vh]">
+    <div
+      class="md:p-0 p-4 text-xl"
+      v-motion="{
+        initial: { x: -200, opacity: 0 },
+        visible: {
+          x: 0,
+          opacity: 1,
+        },
+      }"
+    >
+      <h1 class="text-5xl font-extrabold text-secondary mb-12">
+        Work Experience
+      </h1>
+    </div>
+    <div class="w-full flex flex-col items-center">
+      <div class="grid grid-flow-col w-3/4 gap-x-12">
+        <ExperienceCard
+          v-for="(experience, index) in experiences"
+          :key="experience.org"
+          :e="experience"
+          v-motion="{
+            initial: { y: 100, opacity: 0 },
+            visible: {
+              y: 0,
+              opacity: 1,
+              transition: { delay: index * 50 + 500 },
+            },
+          }"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { Work } from "~/types";
+const experiences = ref<Work[]>([
+  {
+    org: "School Simplified",
+    position: "Chief Information Officer",
+    startDate: "May 2022",
+    endDate: "March 2023",
+    responsibilities: [
+      "Led a team of 20+ student software engineers for the organization’s IT department",
+      "Maintained the codebases behind the organization’s websites and Discord bot commission system",
+    ],
+    website: "https://schoolsimplified.org",
+    image: "https://www.schoolsimplified.org/timmy/dog.png",
+    tags: ["NuxtJS", "Vue", "Firebase", "Discord.py", "TypeScript"],
+  },
+  {
+    org: "Arafa Tech Foundation",
+    position: "Chief Technical Officer",
+    startDate: "February 2023",
+    endDate: "Present",
+    responsibilities: [
+      "Helped build a software development team of 10+ students",
+      "Wrote 4 programming courses for the organization’s website",
+    ],
+    website: "https://arafa.tech",
+    image: "https://arafa.tech/logos/kody/secondary.png",
+    tags: ["Next.js", "React", "OpenAI", "TypeScript"],
+  },
+]);
+</script>
