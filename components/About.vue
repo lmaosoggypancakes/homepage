@@ -1,7 +1,6 @@
 <template>
   <div class="h-[80vh] grid md:grid-cols-2">
     <div
-      class="md:p-0 p-4 text-xl"
       v-motion="{
         initial: { x: -200, opacity: 0 },
         visible: {

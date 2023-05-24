@@ -1,7 +1,7 @@
 <template>
-  <div class="h-[80vh]">
+  <div class="">
     <div
-      class="md:p-0 p-4 text-xl"
+      class="text-xl"
       v-motion="{
         initial: { x: -200, opacity: 0 },
         visible: {
@@ -15,7 +15,7 @@
       </h1>
     </div>
     <div class="w-full flex flex-col items-center">
-      <div class="grid grid-flow-col w-3/4 gap-x-12">
+      <div class="grid lg:grid-flow-col grid-flow-row lg:w-3/4 gap-12">
         <ExperienceCard
           v-for="(experience, index) in experiences"
           :key="experience.org"

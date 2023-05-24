@@ -1,7 +1,9 @@
 <template>
-  <div class="min-h-screen h-[200vh] w-screen flex flex-col items-center">
+  <div class="min-h-screen h-[200vh] max-w-screen flex flex-col items-center">
     <Navbar />
-    <slot />
+    <div class="p-4 text-lg flex flex-col items-center">
+      <slot />
+    </div>
     <Footer />
   </div>
 </template>

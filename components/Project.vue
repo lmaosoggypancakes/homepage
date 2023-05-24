@@ -1,13 +1,19 @@
 <template>
-  <div class="card w-96 bg-base-100 shadow-xl" ref="el">
+  <div class="card w-96 bg-neutral shadow-2xl" ref="el">
     <figure>
-      <img :src="project.image" alt="Shoes" />
+      <img :src="project.image" :alt="project.repo" class="h-96 w-96" />
     </figure>
     <div class="card-body">
       <h2 class="card-title">{{ project.repo }}</h2>
-      <p>{{ project.language }}</p>
+      <p>{{ project.description }}</p>
       <div class="card-actions justify-end">
-        <button class="btn btn-primary">Visit</button>
+        <IconLink
+          v-if="project.website"
+          :href="project.website"
+          name="uil:external-link-alt"
+        >
+        </IconLink>
+        <IconLink :href="project.repoUrl" name="uil:github"> </IconLink>
       </div>
     </div>
   </div>
