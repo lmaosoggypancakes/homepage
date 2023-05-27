@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[80vh] grid md:grid-cols-2">
+  <div class="min-h-[80vh] grid md:grid-cols-2" id="about">
     <div
       v-motion="{
         initial: { x: -200, opacity: 0 },
@@ -21,6 +21,7 @@
       study electrical and computer engineering. Feel free to reach out! :)
     </div>
     <div>
+      <h1 class="text-2xl font-extrabold text-secondary mb-4 mt-4">Skills</h1>
       <ul
         class="flex flex-row justify-center items-center max-w-24 gap-x-4 gap-y-4 flex-wrap relative"
       >
@@ -33,7 +34,7 @@
               visible: {
                 y: 0,
                 opacity: 1,
-                transition: { delay: index * 50 + 250 },
+                transition: { delay: index * 50 },
               },
             }"
           />

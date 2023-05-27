@@ -1,5 +1,4 @@
 {
-  "name": "Josef Macera Portfolio",
   "private": true,
   "scripts": {
     "build": "nuxt build",

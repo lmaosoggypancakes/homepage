@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="min-h-screen" id="experience">
     <div
       class="text-xl"
       v-motion="{
@@ -14,22 +14,21 @@
         Work Experience
       </h1>
     </div>
-    <div class="w-full flex flex-col items-center">
-      <div class="grid lg:grid-flow-col grid-flow-row lg:w-3/4 gap-12">
-        <ExperienceCard
-          v-for="(experience, index) in experiences"
-          :key="experience.org"
-          :e="experience"
-          v-motion="{
-            initial: { y: 100, opacity: 0 },
-            visible: {
-              y: 0,
-              opacity: 1,
-              transition: { delay: index * 50 + 500 },
-            },
-          }"
-        />
-      </div>
+    <div class="w-full flex flex-col items-center space-y-12">
+      <ExperienceCard
+        v-for="(experience, index) in experiences"
+        :key="experience.org"
+        :e="experience"
+        :right="index % 2 === 1"
+        v-motion="{
+          initial: { x: index % 2 === 0 ? -100 : 100, opacity: 0 },
+          visible: {
+            x: 0,
+            opacity: 1,
+            transition: { delay: index * 50 + 500 },
+          },
+        }"
+      />
     </div>
   </div>
 </template>
@@ -37,19 +36,6 @@
 <script setup lang="ts">
 import { Work } from "~/types";
 const experiences = ref<Work[]>([
-  {
-    org: "School Simplified",
-    position: "Chief Information Officer",
-    startDate: "May 2022",
-    endDate: "March 2023",
-    responsibilities: [
-      "Led a team of 20+ student software engineers for the organization’s IT department",
-      "Maintained the codebases behind the organization’s websites and Discord bot commission system",
-    ],
-    website: "https://schoolsimplified.org",
-    image: "https://www.schoolsimplified.org/timmy/dog.png",
-    tags: ["NuxtJS", "Vue", "Firebase", "Discord.py", "TypeScript"],
-  },
   {
     org: "Arafa Tech Foundation",
     position: "Chief Technical Officer",
@@ -60,8 +46,23 @@ const experiences = ref<Work[]>([
       "Wrote 4 programming courses for the organization’s website",
     ],
     website: "https://arafa.tech",
-    image: "https://arafa.tech/logos/kody/secondary.png",
+    mascot: "https://arafa.tech/logos/kody/secondary.png",
     tags: ["Next.js", "React", "OpenAI", "TypeScript"],
+    image: "/arafa_tech.png",
+  },
+  {
+    org: "School Simplified",
+    position: "Chief Information Officer",
+    startDate: "May 2022",
+    endDate: "March 2023",
+    responsibilities: [
+      "Led a team of 20+ student software engineers for the organization’s IT department",
+      "Maintained the codebases behind the organization’s websites and Discord bot commission system",
+    ],
+    website: "https://schoolsimplified.org",
+    mascot: "https://www.schoolsimplified.org/timmy/dog.png",
+    tags: ["NuxtJS", "Vue", "Firebase", "Discord.py", "TypeScript"],
+    image: "/ss.png",
   },
 ]);
 </script>

@@ -11,12 +11,13 @@
     <h1 class="text-5xl font-extrabold text-secondary mt-64">Projects</h1>
   </div>
   <div
-    class="grid lg:grid-flow-col xl:grid-cols-3 grid-cols-1 grid-flow-row justify-between gap-y-36"
+    class="grid lg:grid-flow-col xl:grid-cols-3 grid-cols-1 grid-flow-row lg:justify-between gap-y-36"
     id="projects"
   >
     <Project
       v-for="(repo, index) in repos"
       :project="repo"
+      class="justify-self-center"
       v-motion="{
         initial: { x: -100, opacity: 0 },
         visible: {

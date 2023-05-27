@@ -13,7 +13,8 @@ export interface Work {
   website: string;
   startDate: string;
   endDate?: string;
-  image: string;
+  mascot: string;
   responsibilities: string[];
   tags: string[];
+  image: string;
 }

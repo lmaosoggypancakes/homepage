@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-32 lg:w-5/6">
+  <div class="flex flex-col space-y-32 w-[86%]">
     <Hero />
     <About />
     <Experience />
