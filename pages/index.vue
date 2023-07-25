@@ -1,10 +1,7 @@
 <template>
-  <div class="flex flex-col space-y-32 w-[86%]">
+  <div class="flex flex-col space-y-32 w-full">
     <Hero />
-    <About />
-    <Experience />
-    <Projects />
-    <Contact />
+    <Scroller />
   </div>
 </template>
 

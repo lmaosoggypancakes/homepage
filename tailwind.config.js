@@ -5,15 +5,15 @@ module.exports = {
     themes: [
       {
         dark: {
-          primary: "#c4a7e7",
-          secondary: "#ebbcba",
-          accent: "#f6c177",
-          neutral: "#191724",
-          "base-100": "#1f1d2e",
-          info: "#31748f",
-          success: "#9ccfd8",
-          warning: "#f6c177",
-          error: "#eb6f92",
+          primary: "#282828", // darkest
+          secondary: "#FFD6BA", // lightest
+          accent: "#fabd2f", // light
+          neutral: "#282828", // dark
+          "base-100": "#1d2021", // medium
+          info: "#7aacac", // blue
+          success: "#8fb66d", // green
+          warning: "#ecc100", // yellow
+          error: "#ff2d21", // red
         },
         light: {
           primary: "#907aa9",
